@@ -18,17 +18,18 @@ def getInput(turn, board):
     
     value = 0
 
-    if turn % 2 == 0:
+    if turn % 2 == 0:#get input from player 1
         value = getX()
         symbol = 'X'
         board = changeValue(value, symbol, board)
-    elif turn % 2 != 0:
+    elif turn % 2 != 0:#get input from player 2
         value = getO()
         symbol = 'O'
         board = changeValue(value, symbol, board)
     
     return board
 
+#get input from player 1
 def getX():
     
     value = 0
@@ -38,6 +39,7 @@ def getX():
     
     return value
 
+#get input from player 2
 def getO():
     
     value = 0
@@ -74,7 +76,8 @@ def checkEnd(board):
         return True
     else:
         return False
-    
+
+#check who the winner is    
 def checkWinner(board):
     
     winner = 'Not End'
