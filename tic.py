@@ -39,7 +39,7 @@ def getX():
     
     return value
 
-#get input from player 2
+#get input from player
 def getO():
     
     value = 0
